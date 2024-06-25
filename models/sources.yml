@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: hrms_bronze_raw
+    database: xyzcompany
+    schema: hrms_bronze
+    tables:
+      - name: departments
+      - name: employees

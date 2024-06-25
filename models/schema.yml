@@ -2,20 +2,18 @@
 version: 2
 
 models:
-    - name: my_first_dbt_model
-      description: "A starter dbt model"
+    - name: departments_stg
+      description: "Silver layer departments model"
       columns:
-          - name: id
+          - name: department_id
             description: "The primary key for this table"
             tests:
-                - unique
                 - not_null
 
-    - name: my_second_dbt_model
-      description: "A starter dbt model"
+    - name: orders_stg
+      description: "Silver layer employees model"
       columns:
-          - name: id
+          - name: employee_id
             description: "The primary key for this table"
             tests:
-                - unique
                 - not_null
