@@ -1,0 +1,19 @@
+
+version: 2
+
+models:
+    - name: departments_stg
+      description: "Silver layer departments model"
+      columns:
+          - name: department_id
+            description: "The primary key for this table"
+            tests:
+                - not_null
+
+    - name: orders_stg
+      description: "Silver layer employees model"
+      columns:
+          - name: employee_id
+            description: "The primary key for this table"
+            tests:
+                - not_null
